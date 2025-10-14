@@ -11,7 +11,7 @@ namespace BusinessLayer.Concrete
 {
     public class ServiceManager : IServiceService
     {
-        IServiceDal _serviceDal;
+        private readonly IServiceDal _serviceDal;
 
         public ServiceManager(IServiceDal serviceDal)
         {

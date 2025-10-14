@@ -11,7 +11,7 @@ namespace BusinessLayer.Concrete
 {
     public class ExperienceManager : IExperienceService
     {
-        IExperienceDal _experienceDal;
+        private readonly IExperienceDal _experienceDal;
 
         public ExperienceManager(IExperienceDal experienceDal)
         {

@@ -11,7 +11,7 @@ namespace BusinessLayer.Concrete
 {
     public class SkillManager : ISkillService
     {
-        ISkillDal _skillDal;
+        private readonly ISkillDal _skillDal;
 
         public SkillManager(ISkillDal skillDal)
         {
